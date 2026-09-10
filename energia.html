@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atraer buenas energías · Música para elevar tu vibración</title>
+<meta name="description" content="Música de energía positiva para elevar tu vibración y atraer lo bueno a tu vida.">
+<meta property="og:title" content="Atraer buenas energías">
+<meta property="og:description" content="Música para elevar tu vibración y atraer lo bueno.">
+<meta property="og:image" content="portada-3.jpg">
+<meta name="theme-color" content="#07060F">
+<link rel="icon" href="portada-3.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script>
+/* ══ PIXEL DE META · carga por appendChild, no depende de otros scripts ══ */
+(function(){
+  if (window.fbq) return;
+  var n = window.fbq = function(){
+    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+  };
+  if (!window._fbq) window._fbq = n;
+  n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+  var t = document.createElement('script');
+  t.async = true;
+  t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+  (document.head || document.documentElement).appendChild(t);
+})();
+fbq('init', '1639155350959159');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1639155350959159&ev=PageView&noscript=1"/></noscript>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4JZK3F5D7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-Y4JZK3F5D7');
+</script>
+
+<style>
+  :root{
+    --noche:#07060F;
+    --tinta:#F6F3FF;
+    --tinta-2:#C9C1E4;
+    --tinta-3:#8E86AD;
+    --spotify:#1DB954;
+    --vidrio:rgba(255,255,255,.055);
+    --borde:rgba(255,255,255,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    min-height:100dvh;
+    background:var(--noche);
+    color:var(--tinta);
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-weight:400;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    display:flex;align-items:center;justify-content:center;
+    padding:clamp(16px,4vw,40px) clamp(14px,4vw,24px);
+    padding-bottom:calc(clamp(16px,4vw,40px) + env(safe-area-inset-bottom));
+  }
+
+  /* ── Fondo vivo: la portada difuminada, con deriva lenta ── */
+  .atmosfera{position:fixed;inset:0;z-index:-2;overflow:hidden;background:var(--noche)}
+  .atmosfera img{
+    position:absolute;top:50%;left:50%;
+    width:135%;height:135%;
+    transform:translate(-50%,-50%);
+    object-fit:cover;
+    filter:blur(58px) saturate(1.35) brightness(.62);
+    animation:deriva 34s ease-in-out infinite alternate;
+  }
+  @keyframes deriva{
+    from{transform:translate(-51%,-50%) scale(1)}
+    to  {transform:translate(-49%,-51%) scale(1.09)}
+  }
+  .velo{
+    position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(78% 55% at 50% 8%, rgba(120,90,220,.30) 0%, transparent 62%),
+      linear-gradient(180deg, rgba(7,6,15,.42) 0%, rgba(7,6,15,.80) 55%, rgba(7,6,15,.95) 100%);
+  }
+  /* respiración: un latido de luz muy lento */
+  .aliento{
+    position:fixed;left:50%;top:-14%;transform:translateX(-50%);
+    width:min(760px,145vw);height:min(560px,90vw);
+    z-index:-1;pointer-events:none;
+    background:radial-gradient(circle, rgba(168,140,255,.20) 0%, transparent 68%);
+    animation:respirar 9s ease-in-out infinite;
+  }
+  @keyframes respirar{
+    0%,100%{opacity:.55;transform:translateX(-50%) scale(1)}
+    50%    {opacity:.95;transform:translateX(-50%) scale(1.13)}
+  }
+
+  /* ── La carta ── */
+  .carta{
+    position:relative;
+    width:100%;max-width:392px;
+    background:var(--vidrio);
+    border:1px solid var(--borde);
+    border-radius:26px;
+    backdrop-filter:blur(26px) saturate(1.25);
+    -webkit-backdrop-filter:blur(26px) saturate(1.25);
+    box-shadow:0 30px 90px rgba(0,0,0,.62), inset 0 1px 0 rgba(255,255,255,.09);
+    overflow:hidden;
+    animation:aparecer .95s cubic-bezier(.2,.7,.25,1) both;
+  }
+  @keyframes aparecer{
+    from{opacity:0;transform:translateY(26px) scale(.975)}
+    to  {opacity:1;transform:none}
+  }
+
+  .escena{position:relative;aspect-ratio:16/11;overflow:hidden}
+  .escena img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    animation:acercar 26s ease-in-out infinite alternate;
+  }
+  @keyframes acercar{ from{transform:scale(1.02)} to{transform:scale(1.13)} }
+  .escena::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(7,6,15,.05) 0%, rgba(7,6,15,.30) 48%, rgba(7,6,15,.92) 100%);
+  }
+
+  .insignia{
+    position:absolute;top:14px;left:14px;z-index:2;
+    display:inline-flex;align-items:center;gap:6px;
+    padding:6px 12px;border-radius:999px;
+    background:rgba(10,8,20,.52);
+    border:1px solid rgba(255,255,255,.16);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    font-size:11.5px;font-weight:500;letter-spacing:.02em;color:var(--tinta-2);
+  }
+  .insignia svg{width:12px;height:12px;opacity:.85}
+
+  .rotulo{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 20px 17px}
+  h1{
+    font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+    font-weight:300;
+    font-size:clamp(30px,8.6vw,38px);
+    line-height:1.02;
+    letter-spacing:.004em;
+    text-shadow:0 2px 26px rgba(0,0,0,.6);
+  }
+  h1 em{font-style:italic;font-weight:400}
+  .aire{
+    margin-top:9px;
+    font-size:11.5px;font-weight:400;letter-spacing:.13em;text-transform:uppercase;
+    color:rgba(230,222,255,.72);
+  }
+
+  .cuerpo{padding:17px 20px 20px}
+  .es{font-size:14.5px;color:var(--tinta-2);font-weight:300;line-height:1.55}
+  .pt{margin-top:5px;font-size:12.5px;color:var(--tinta-3);font-weight:300;font-style:italic;line-height:1.5}
+
+  /* ── El botón: el corazón de la página ── */
+  .escuchar{
+    display:flex;align-items:center;justify-content:center;gap:11px;
+    margin-top:18px;padding:17px 22px;min-height:56px;
+    border-radius:999px;text-decoration:none;
+    background:linear-gradient(180deg,#25D366 0%,var(--spotify) 100%);
+    color:#04240F;
+    font-size:16.5px;font-weight:600;letter-spacing:-.008em;
+    box-shadow:0 0 0 0 rgba(29,185,84,.42), 0 12px 30px rgba(29,185,84,.26);
+    animation:pulso 3.4s ease-in-out infinite;
+    transition:transform .14s ease, filter .14s ease;
+  }
+  @keyframes pulso{
+    0%,100%{box-shadow:0 0 0 0 rgba(29,185,84,.40), 0 12px 30px rgba(29,185,84,.24)}
+    50%    {box-shadow:0 0 0 13px rgba(29,185,84,0), 0 12px 34px rgba(29,185,84,.34)}
+  }
+  .escuchar:hover{filter:brightness(1.06);transform:translateY(-1px)}
+  .escuchar:active{transform:scale(.985)}
+  .escuchar svg{width:21px;height:21px;flex:none}
+  .gratis{margin-top:10px;text-align:center;font-size:11.5px;letter-spacing:.06em;color:var(--tinta-3)}
+
+  /* ── Los tracks ── */
+  .tracks{margin:16px 14px 15px;border-radius:15px;overflow:hidden;background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.06)}
+  .tracks iframe{display:block;width:100%;height:232px;border:0}
+
+  .firma{
+    text-align:center;padding:0 20px 17px;
+    font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(142,134,173,.62);
+  }
+
+  @media(max-width:344px){
+    .escena{aspect-ratio:16/12}
+    .cuerpo{padding:15px 17px 18px}
+    .rotulo{padding:0 17px 15px}
+    .tracks iframe{height:212px}
+  }
+  @media(min-width:1024px){
+    .carta{max-width:412px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+
+  <div class="atmosfera"><img src="portada-3.jpg" alt="" aria-hidden="true"></div>
+  <div class="velo"></div>
+  <div class="aliento"></div>
+
+  <main class="carta">
+    <div class="escena">
+      <span class="insignia">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+        </svg>
+        88 pistas
+      </span>
+      <img src="portada-3.jpg" alt="Atraer buenas energías">
+      <div class="rotulo">
+        <h1>Buenas <em>energías</em></h1>
+        <p class="aire">Vibración · Abundancia</p>
+      </div>
+    </div>
+
+    <div class="cuerpo">
+      <p class="es">Para elevar tu vibración, empezar el día y atraer lo bueno.</p>
+      <p class="pt">Para elevar sua vibração e atrair coisas boas.</p>
+
+      <a class="escuchar" id="spotify" href="https://open.spotify.com/playlist/171rQnAY9dHHdZJfzLLilx" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-1.02-.12-1.14-.6-.12-.48.12-1.02.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.24.54.84.24 1.2zm.12-3.42C15.24 8.4 8.82 8.16 5.22 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.22-1.02 15.6 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.5.24z"/>
+        </svg>
+        <span>Escuchar en Spotify</span>
+      </a>
+      <p class="gratis">Gratis · Grátis</p>
+    </div>
+
+    <div class="tracks">
+      <iframe src="https://open.spotify.com/embed/playlist/171rQnAY9dHHdZJfzLLilx?utm_source=generator&theme=0"
+        loading="lazy" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        title="Reproductor"></iframe>
+    </div>
+
+    <p class="firma">Frecuencia de Dios</p>
+  </main>
+
+<script>
+  document.getElementById('spotify').addEventListener('click', function(){
+    // 1) Evento por el SDK
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead', { content_name: 'Atraer buenas energias' });
+    }
+    // 2) Respaldo por imagen, por si el SDK no llegó a cargar
+    try {
+      new Image().src = 'https://www.facebook.com/tr?id=1639155350959159&ev=Lead&noscript=1&cd[content_name]='
+        + encodeURIComponent('Atraer buenas energias') + '&rnd=' + Date.now();
+    } catch(e){}
+    // 3) Analytics
+    if (typeof gtag === 'function') {
+      gtag('event', 'click_spotify', { playlist: 'Atraer buenas energias' });
+    }
+  });
+</script>
+</body>
+</html>
