@@ -4,14 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Atraer buenas energías · Música para elevar tu vibración</title>
-<meta name="description" content="Música de energía positiva para elevar tu vibración, empezar el día y atraer lo bueno a tu vida.">
+<meta name="description" content="Música de energía positiva para elevar tu vibración y atraer lo bueno a tu vida.">
 <meta property="og:title" content="Atraer buenas energías">
 <meta property="og:description" content="Música para elevar tu vibración y atraer lo bueno.">
 <meta property="og:image" content="portada-3.jpg">
-<meta property="og:type" content="music.playlist">
 <link rel="icon" href="portada-3.jpg">
 
-<!-- ═══ PIXEL DE META ═══ -->
+<!-- PIXEL DE META -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -21,129 +20,114 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1639155350959159');
-fbq('track', 'PageView');
+fbq('init','1639155350959159');
+fbq('track','PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1639155350959159&ev=PageView&noscript=1"/></noscript>
 
-<!-- ═══ GOOGLE ANALYTICS · reemplazá G-XXXXXXXXXX por tu ID ═══ -->
+<!-- GOOGLE ANALYTICS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-XXXXXXXXXX');
 </script>
 
 <style>
   :root{
-    --bg:#0D0A18;
-    --glow:#2E2258;
-    --card:#171230;
-    --card-2:#1F1940;
-    --edge:#2E2656;
-    --ink:#F4F1FC;
-    --ink-2:#B4AAD4;
-    --ink-3:#7C7299;
+    --bg:#0D0A18; --glow:#2E2258; --card:#171230; --card-2:#1F1940;
+    --edge:#2E2656; --ink:#F4F1FC; --ink-2:#B4AAD4; --ink-3:#7C7299;
     --spotify:#1DB954;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%}
   body{
     background:var(--bg);
-    background-image:radial-gradient(120% 60% at 50% 0%, var(--glow) 0%, var(--bg) 70%);
+    background-image:radial-gradient(130% 55% at 50% 0%, var(--glow) 0%, var(--bg) 68%);
     background-attachment:fixed;
-    min-height:100dvh;
-    color:var(--ink);
+    min-height:100dvh; color:var(--ink);
     font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    line-height:1.5;
-    -webkit-font-smoothing:antialiased;
-    padding:20px 16px calc(28px + env(safe-area-inset-bottom));
-    display:flex;justify-content:center;
+    line-height:1.45; -webkit-font-smoothing:antialiased;
+    padding:16px 14px calc(24px + env(safe-area-inset-bottom));
+    display:flex; justify-content:center;
   }
   .card{
-    width:100%;max-width:420px;
-    background:var(--card);
-    border:1px solid var(--edge);
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 20px 60px rgba(0,0,0,.55);
+    width:100%; max-width:400px;
+    background:var(--card); border:1px solid var(--edge);
+    border-radius:18px; overflow:hidden;
+    box-shadow:0 18px 50px rgba(0,0,0,.5);
     align-self:flex-start;
   }
-  .art{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--card-2)}
+  /* Portada más chica: deja lugar al botón sin scrollear */
+  .top{display:flex; gap:13px; padding:14px 14px 0; align-items:center}
+  .art{
+    width:88px; height:88px; flex:none;
+    border-radius:12px; object-fit:cover; background:var(--card-2);
+  }
+  .titles{min-width:0}
+  h1{font-size:17px; font-weight:650; letter-spacing:-.015em; line-height:1.25}
+  .es{color:var(--ink-2); font-size:13.5px; margin-top:5px}
+  .pt{color:var(--ink-3); font-size:12.5px; margin-top:3px; font-style:italic}
 
-  .body{padding:20px 18px 22px}
-  h1{font-size:clamp(18px,5vw,21px);font-weight:650;letter-spacing:-.015em;line-height:1.3}
-  .es{color:var(--ink-2);font-size:14.5px;margin-top:8px}
-  .pt{color:var(--ink-3);font-size:13.5px;margin-top:5px;font-style:italic}
-
-  .player{margin-top:16px;border-radius:12px;overflow:hidden;background:var(--card-2)}
-  .player iframe{display:block;width:100%;height:352px;border:0}
-
+  /* El botón, lo primero que se ve completo */
+  .cta{padding:14px}
   .play{
-    display:flex;align-items:center;justify-content:center;gap:10px;
-    margin-top:16px;padding:16px 20px;
-    background:var(--spotify);color:#062812;
-    border-radius:999px;text-decoration:none;
-    font-size:16px;font-weight:700;letter-spacing:-.01em;
-    min-height:52px;
-    transition:filter .12s,transform .1s;
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    padding:16px 18px; min-height:54px;
+    background:var(--spotify); color:#062812;
+    border-radius:999px; text-decoration:none;
+    font-size:16.5px; font-weight:700; letter-spacing:-.01em;
+    transition:filter .12s, transform .1s;
   }
   .play:hover{filter:brightness(1.07)}
   .play:active{transform:scale(.987)}
   .play svg{width:21px;height:21px;flex:none}
+  .free{text-align:center;color:var(--ink-3);font-size:12px;margin-top:9px}
 
-  .foot{text-align:center;color:var(--ink-3);font-size:12.5px;margin-top:14px}
+  /* Los tracks, para quien quiera mirar antes de entrar */
+  .player{margin:0 14px 14px;border-radius:12px;overflow:hidden;background:var(--card-2)}
+  .player iframe{display:block;width:100%;height:232px;border:0}
 
-  @media(max-width:380px){
-    body{padding:14px 12px 24px}
-    .body{padding:17px 15px 19px}
-    .player iframe{height:332px}
+  @media(max-width:340px){
+    .art{width:74px;height:74px}
+    h1{font-size:15.5px}
+    .player iframe{height:212px}
   }
-  @media(min-width:900px){
-    body{align-items:center;padding-top:40px}
-  }
+  @media(min-width:900px){ body{align-items:center} }
 </style>
 </head>
 <body>
   <main class="card">
-    <img class="art" src="portada-3.jpg" alt="Atraer buenas energías" width="600" height="600">
-
-    <div class="body">
-      <h1>Atraer buenas energías 🌅</h1>
-      <p class="es">Música para elevar tu vibración, empezar el día y atraer lo bueno a tu vida.</p>
-      <p class="pt">Música com energia positiva para elevar sua vibração e atrair coisas boas.</p>
-
-      <div class="player">
-        <iframe
-          src="https://open.spotify.com/embed/playlist/171rQnAY9dHHdZJfzLLilx?utm_source=generator&theme=0"
-          loading="lazy"
-          allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          title="Reproductor de la playlist"></iframe>
+    <div class="top">
+      <img class="art" src="portada-3.jpg" alt="Atraer buenas energías" width="176" height="176">
+      <div class="titles">
+        <h1>Atraer buenas energías 🌅</h1>
+        <p class="es">Para elevar tu vibración y atraer lo bueno.</p>
+        <p class="pt">Para elevar sua vibração e atrair coisas boas.</p>
       </div>
+    </div>
 
-      <a class="play" id="spotify"
-         href="https://open.spotify.com/playlist/171rQnAY9dHHdZJfzLLilx"
-         target="_blank" rel="noopener">
+    <div class="cta">
+      <a class="play" id="spotify" href="https://open.spotify.com/playlist/171rQnAY9dHHdZJfzLLilx" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.52 17.34c-.24.36-.66.48-1.02.24-2.82-1.74-6.36-2.1-10.56-1.14-.42.12-.78-.18-.9-.54-.12-.42.18-.78.54-.9 4.56-1.02 8.52-.6 11.64 1.32.42.18.48.66.3 1.02zm1.44-3.3c-.3.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.38-.48.12-1.02-.12-1.14-.6-.12-.48.12-1.02.6-1.14 4.38-1.32 9.78-.66 13.5 1.62.36.24.54.84.24 1.2zm.12-3.42C15.24 8.4 8.82 8.16 5.22 9.3c-.6.18-1.2-.18-1.38-.72-.18-.6.18-1.2.72-1.38 4.2-1.26 11.22-1.02 15.6 1.62.54.3.72 1.02.42 1.56-.3.42-1.02.6-1.5.24z"/>
         </svg>
         <span>Escuchar en Spotify</span>
       </a>
+      <p class="free">Gratis · Grátis</p>
+    </div>
 
-      <p class="foot">Gratis · Grátis</p>
+    <div class="player">
+      <iframe src="https://open.spotify.com/embed/playlist/171rQnAY9dHHdZJfzLLilx?utm_source=generator&theme=0"
+        loading="lazy" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        title="Reproductor"></iframe>
     </div>
   </main>
 
 <script>
-  document.getElementById('spotify').addEventListener('click', function(){
-    if (typeof fbq === 'function') {
-      fbq('track', 'Lead', { content_name: 'Atraer buenas energias' });
-    }
-    if (typeof gtag === 'function') {
-      gtag('event', 'click_spotify', { playlist: 'Atraer buenas energias' });
-    }
+  document.getElementById('spotify').addEventListener('click',function(){
+    if(typeof fbq==='function'){fbq('track','Lead',{content_name:'Atraer buenas energias'});}
+    if(typeof gtag==='function'){gtag('event','click_spotify',{playlist:'Atraer buenas energias'});}
   });
 </script>
 </body>
