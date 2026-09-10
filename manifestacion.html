@@ -253,7 +253,7 @@ src="https://www.facebook.com/tr?id=1639155350959159&ev=PageView&noscript=1"/></
   document.getElementById('spotify').addEventListener('click', function(){
     // 1) Evento por el SDK
     if (typeof fbq === 'function') {
-      fbq('track', 'Lead', { content_name: 'Manifestacion 528 Hz' });
+      fbq('track', 'ViewContent', { content_name: 'Manifestacion 528 Hz' });
     }
     // 2) Respaldo por imagen, por si el SDK no llegó a cargar
     try {
